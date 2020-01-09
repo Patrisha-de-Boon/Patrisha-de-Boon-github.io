@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(4, 36, 54);
+    margin:0;
+    border:0;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#nav-bar {
+    position: absolute;
+    width: 90%;
+    height: 70px;
+    top: 2%;
+    left: 5%;
+    text-align: center;
+}
+
+#nav-bar-logo {
+    position: relative;
+    float:left;
+    height: 100%;
+    z-index: 2;
+}
+
+#nav-bar-text {
+    position: absolute;
+    width: 100% ;
+    top: 20px;
+}
+
+.nav-bar-item {
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.home-background {
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/umberto-jXd2FSvcRr8-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border: 0;
+    margin: 0;
+}
+
+.title-background {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    width: 50%;
+    height: 40%;
+}
+
+.title-text {
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    text-align: center;
+    font-size: 5vw;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+/*Centered based on this source https://www.w3schools.com/howto/howto_css_blurred_background.asp*/
+.centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lowered {
+    bottom: 0;
+}
+
+/* Blurred Background based on this source https://www.w3schools.com/howto/howto_css_blurred_background.asp */
+.blur {
+    height: 100%;
+    width: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.inner {
+    width: 90%;
+    left: 5%;
+}
