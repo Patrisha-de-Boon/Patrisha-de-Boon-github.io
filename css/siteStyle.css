@@ -31,7 +31,6 @@ body {
 .nav-bar-item {
     color: white;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
     font-size: 25px;
     padding: 10px;
 }
@@ -89,6 +88,6 @@ body {
 }
 
 .inner {
-    width: 90%;
-    left: 5%;
+    width:70%;
+    left: 15%;
 }
