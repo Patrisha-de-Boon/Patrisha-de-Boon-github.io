@@ -9,13 +9,11 @@
 
 .body-left {
     min-height: 80%;
-    /* width: 60%; */
     padding-right: 1vw;
 }
 
 .body-right {
     min-height: 80%;
-    /* width: 40%; */
     padding-left: 1vw;
 }
 
@@ -24,7 +22,7 @@
     margin: 0;
     font-size: 3vh;
     text-align: left;
-    line-height: 6vh;
+    line-height: 5vh;
 }
 
 .body-spacer {
@@ -37,10 +35,6 @@
 
 .less-wide {
     width: 40%;
-}
-
-.dark {
-    background-color: rgb(2, 20, 31);
 }
 
 .inner {
