@@ -1,0 +1,64 @@
+.body-section {
+    display: flex;
+    position: relative;
+    min-height: 60%;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.body-left {
+    min-height: 80%;
+    /* width: 60%; */
+    padding-right: 1vw;
+}
+
+.body-right {
+    min-height: 80%;
+    /* width: 40%; */
+    padding-left: 1vw;
+}
+
+.body-text {
+    padding: 0;
+    margin: 0;
+    font-size: 3vh;
+    text-align: left;
+    line-height: 6vh;
+}
+
+.body-spacer {
+    height: 2vw;
+}
+
+.wide {
+    width: 60%;
+}
+
+.less-wide {
+    width: 40%;
+}
+
+.dark {
+    background-color: rgb(2, 20, 31);
+}
+
+.inner {
+    width:90%;
+    left: 5%;
+}
+
+/* The video containers are from the following source
+https://stackoverflow.com/questions/35814653/automatic-height-when-embedding-a-youtube-video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

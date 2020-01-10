@@ -1,26 +1,11 @@
-#header {
-    width: 100%;
-    height: 40%;
-    position: relative;
-    background-color: black;
-}
-
-#about-title {
-    text-align: left;
-}
-
-#about-body {
-    position: relative;
-}
-
-.about-body-section {
+.body-section {
     position: relative;
     font-size: medium;
     height: 60%;
     width: 100%;
 }
 
-.about-body-left {
+.body-left {
     display: table;
     position: absolute;
     height: 90%;
@@ -28,7 +13,7 @@
     top: 5%;
 }
 
-.about-body-right {
+.body-right {
     display: table;
     position: absolute;
     left: 42%;
@@ -38,12 +23,7 @@
     text-align: center;
 }
 
-.table {
-    display: table;
-    position: absolute;
-}
-
-.about-body-text {
+.body-text {
     display: table-cell;
     vertical-align: middle;
     font-size: 4vh;
