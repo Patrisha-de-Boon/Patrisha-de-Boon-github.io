@@ -1,7 +1,7 @@
 .body-section {
     position: relative;
     font-size: medium;
-    height: 60%;
+    height: 50%;
     width: 100%;
 }
 
@@ -9,15 +9,15 @@
     display: table;
     position: absolute;
     height: 90%;
-    width: 40%;
+    width: 30%;
     top: 5%;
 }
 
 .body-right {
     display: table;
     position: absolute;
-    left: 42%;
-    width: 58%;
+    left: 32%;
+    width: 68%;
     height: 90%;
     top:5%;
     text-align: center;
@@ -26,5 +26,10 @@
 .body-text {
     display: table-cell;
     vertical-align: middle;
-    font-size: 4vh;
+    font-size: 3vh;
+}
+
+.inner {
+    width:70%;
+    left: 15%;
 }

@@ -95,8 +95,8 @@ body {
 }
 
 .inner {
-    width:70%;
-    left: 15%;
+    width:90%;
+    left: 5%;
 }
 
 .relative {
@@ -118,4 +118,8 @@ body {
 .table-cell {
     display: table-cell;
     vertical-align: middle;
+}
+
+.body-spacer {
+    height: 2vw;
 }

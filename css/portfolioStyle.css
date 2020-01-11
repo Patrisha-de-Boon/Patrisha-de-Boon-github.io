@@ -1,7 +1,6 @@
 .body-section {
     display: flex;
     position: relative;
-    min-height: 60%;
     width: 100%;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -20,13 +19,9 @@
 .body-text {
     padding: 0;
     margin: 0;
-    font-size: 3vh;
+    font-size: 2.5vh;
     text-align: left;
     line-height: 5vh;
-}
-
-.body-spacer {
-    height: 2vw;
 }
 
 .wide {
@@ -35,11 +30,6 @@
 
 .less-wide {
     width: 40%;
-}
-
-.inner {
-    width:90%;
-    left: 5%;
 }
 
 /* The video containers are from the following source
