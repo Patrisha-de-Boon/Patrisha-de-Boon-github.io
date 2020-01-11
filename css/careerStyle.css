@@ -1,32 +1,187 @@
-.body-section {
+.Timeline {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Timeline line {
+    stroke: inherit;
+    stroke-width: 3;
+    stroke-linecap: round;
+  }
+  
+  .Timeline circle {
+    fill:  rgb(4, 36, 54);
+  }
+  
+  .time {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #9E9E9E;
+  }
+  
+  .time2 {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-top: -12px;
+    color: #9E9E9E;
+  }
+  
+  .label {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    width:5%;
+    color: #9E9E9E;
+  }
+  
+  .label-line {
+    display: inline;
+    position: absolute;
+    width: 50%;
+    margin-left: 5%;
+    padding: 0;
+    margin-top: -2px;
+  }
+  
+  .label-line line {
+    stroke: inherit;
+    stroke-width: 3;
+    stroke-linecap: round;
+  }
+  
+  .right-border {
+    border-right: 1px solid #9E9E9E;
+  }
+  
+  .inner {
+    width:80%;
+    left: 10%;
+  }
+  
+  .placeholder {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  
+  .grey {
+    color:#AAAAAA;
+    stroke:#AAAAAA;
+    fill: #AAAAAA;
+  }
+  
+  .pcl {
+    color: green;
+    stroke: green;
+  }
+  
+  .rdc {
+    color: greenyellow;
+    stroke: greenyellow
+  }
+  
+  .university {
+    color: #FFDB05;
+    stroke:#FFDB05;
+  }
+  
+  .ta {
+    color: #E0D760;
+    stroke: #E0D760;
+  }
+  
+  .acfs {
+    color: rgb(53, 166, 211);
+    stroke: rgb(53, 166, 211);
+  }
+  
+  .ltchs {
+    color: red;
+    stroke:red;
+  }
+  
+  .youthHQ {
+    color: purple;
+    stroke:purple;
+  }
+  
+  .central-labs {
+    color: orange;
+    stroke: orange;
+  }
+  
+  .center {
+    left: 50%; 
+    top: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%); 
+    position: absolute;
+  }
+  
+  .dotted {
+    stroke-dasharray: 10, 10;
+  }
+  
+  .offset-dash {
+    stroke-dashoffset: 10;;
+  }
+  
+  .hidden {
+    display: none;
+    position: absolute;
+    color: white;
+  }
+  
+  /* Use this on lines to make them invisible and provide larger area to hover over */
+  .hover{
+    z-index: 2;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+  }
+  
+  .hover:hover ~svg line{
+    stroke-width: 5;
+  }
+  
+  .hover:hover +.hidden{
+    display:block;
+  }
+  
+  .top-space {
+    margin-top: 2%;
+  }
+  
+  .body-section {
     display: flex;
     position: relative;
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-.body-left {
+    margin-top:1%;
+    width: 95%;
+  }
+  
+  .body-left {
     min-height: 80%;
     padding-right: 2vw;
     width: 30%;
-}
-
-.body-right {
+  }
+  
+  .body-right {
     min-height: 80%;
     padding-left: 2vw;
     width: 70%;
-}
-
-.body-text {
+  }
+  
+  .body-text {
     padding: 0;
     margin: 0;
-    font-size: 2.5vh;
+    font-size: 2vh;
     text-align: left;
-    line-height: 5vh;
-}
-
-.inner {
-    width:90%;
-    left: 5%;
-}
+    line-height: 3vh;
+  }
