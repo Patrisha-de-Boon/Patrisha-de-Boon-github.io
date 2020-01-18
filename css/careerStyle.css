@@ -64,6 +64,12 @@
     width: 0;
     height: 0;
   }
+
+  .white {
+    color:white;
+    stroke: white;
+    fill: white;
+  }
   
   .grey {
     color:#AAAAAA;
