@@ -1,35 +1,14 @@
-.body-section {
-    position: relative;
-    font-size: medium;
-    height: 50%;
-    width: 100%;
-}
-
-.body-left {
-    display: table;
-    position: absolute;
-    height: 90%;
-    width: 30%;
-    top: 5%;
-}
-
-.body-right {
-    display: table;
-    position: absolute;
-    left: 32%;
-    width: 68%;
-    height: 90%;
-    top:5%;
-    text-align: center;
+.body-title {
+    vertical-align: middle;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .body-text {
-    display: table-cell;
     vertical-align: middle;
-    font-size: 3vh;
-}
-
-.inner {
-    width:70%;
-    left: 15%;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 50px;
+    padding: 15px;
 }

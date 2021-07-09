@@ -1,27 +1,23 @@
 .body-section {
     display: flex;
     position: relative;
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
 }
 
 .body-left {
     min-height: 80%;
-    padding-right: 1vw;
+    padding-right: 2vw;
 }
 
 .body-right {
     min-height: 80%;
-    padding-left: 1vw;
 }
 
 .body-text {
     padding: 0;
     margin: 0;
-    font-size: 2.5vh;
     text-align: left;
-    line-height: 5vh;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .wide {
@@ -39,10 +35,20 @@ https://stackoverflow.com/questions/35814653/automatic-height-when-embedding-a-y
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
 }
+
 .video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.body-container {
+    height: auto !important;
+    margin-bottom: 2% !important;
+}
+
+.content-wrapper {
+    height: 86% !important;
 }
