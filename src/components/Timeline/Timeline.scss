@@ -1,0 +1,165 @@
+.Timeline {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+line {
+  stroke: inherit;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.Timeline circle {
+  fill:  rgb(4, 36, 54);
+}
+
+.time {
+  position: absolute;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 10px;
+  color: #9E9E9E;
+}
+
+.time2 {
+  position: absolute;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 10px;
+  margin-top: -12px;
+  color: #9E9E9E;
+}
+
+.label {
+  position: absolute;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 1vw;
+  width:5%;
+  color: #9E9E9E;
+}
+
+.label-line {
+  display: inline-block;
+  position: absolute;
+  width: 50%;
+  margin-left: 5%;
+  padding: 0;
+  margin-top: -0.1vw;
+}
+
+.label-line line {
+  stroke: inherit;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.right-border {
+  border-right: 1px solid #9E9E9E;
+}
+
+.placeholder {
+  position: relative;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.white {
+  color:white;
+  stroke: white;
+  fill: white;
+}
+
+.grey {
+  color:#AAAAAA;
+  stroke:#AAAAAA;
+  fill: #AAAAAA;
+}
+
+.pcl {
+  color: green;
+  stroke: green;
+}
+
+.rdc {
+  color: greenyellow;
+  stroke: greenyellow
+}
+
+.university {
+  color: #FFDB05;
+  stroke:#FFDB05;
+}
+
+.ta {
+  color: #E0D760;
+  stroke: #E0D760;
+}
+
+.acfs {
+  color: rgb(53, 166, 211);
+  stroke: rgb(53, 166, 211);
+}
+
+.ltchs {
+  color: red;
+  stroke:red;
+}
+
+.youthHQ {
+  color: purple;
+  stroke:purple;
+}
+
+.central-labs {
+  color: orange;
+  stroke: orange;
+}
+
+.center {
+  left: 50%; 
+  top: 50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%); 
+  position: absolute;
+}
+
+.dotted {
+  stroke-dasharray: 5, 5;
+}
+
+.offset-dash {
+  stroke-dashoffset: 5;
+}
+
+.hidden {
+  display: none;
+  position: fixed;
+  color: white;
+  top: 30% !important;
+  bottom: 2% !important;
+  width:70%;
+  max-width: 1500px;
+}
+
+/* Use this on lines to make them invisible and provide larger area to hover over */
+.hover {
+  color: transparent;
+  stroke: transparent;
+  stroke-width: 24;
+}
+
+.selected {
+  stroke-width: 6;
+}
+
+.hover:hover +.hidden{
+  display:block;
+}
+
+.top-space {
+  margin-top: 2%;
+}

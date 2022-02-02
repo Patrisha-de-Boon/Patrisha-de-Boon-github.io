@@ -1,0 +1,236 @@
+#page {
+  // position: fixed;
+  top: 100px;
+  width: 100%;
+}
+
+#page-content {
+  position: static;
+}
+
+.nav-spacer {
+  height: 115px;
+}
+
+.about {
+  margin-top: -2em;
+}
+
+.nav-bar-background {
+  position: fixed;
+  bottom: calc(100% - 100px);
+}
+
+#nav-bar {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+#inner-nav-bar {
+  position: fixed;
+  width: 90%;
+  height: 70px;
+  top: 15px;
+  left: 5%;
+}
+
+#nav-bar a {
+  cursor: pointer;
+}
+
+#nav-bar-logo {
+  position: relative;
+  float:left;
+  height: 100%;
+  z-index: 2;
+}
+
+#nav-bar-text {
+  position: absolute;
+  width: 100% ;
+  top: 20px;
+}
+
+.nav-bar-item {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.nav-background {
+  height: 100px;
+}
+
+.home-background {
+  background-image: url('../../assets/umberto-jXd2FSvcRr8-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  margin: 0;
+}
+
+.title-background {
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  width: 50%;
+  height: 40%;
+}
+
+html, body {
+  margin:0;
+  border:0;
+  color: white;
+  background-color: #181818;
+  height: 100%;
+  width: 100%;
+}
+
+.black {
+  background-color: black !important;
+}
+
+.shaded {
+  background-color: black;
+  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+}
+
+.title-text {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Raleway', sans-serif; */
+}
+
+.index-title-text {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  font-size: 4vw;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* font-family: 'Playfair Display', serif; */
+}
+
+/*Centered based on this source https://www.w3schools.com/howto/howto_css_blurred_background.asp*/
+.centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.lowered {
+  bottom: 2%;
+}
+
+/* Blurred Background based on this source https://www.w3schools.com/howto/howto_css_blurred_background.asp */
+.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.relative {
+  position: relative;
+}
+
+.wide {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 15%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.content-wrapper {
+  border-radius: 20px;
+  top: 14%;
+  height: 84%;
+  width:72%;
+  max-width: 1550px;
+  margin: auto;
+}
+
+.inner {
+  width:70%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.event-container {
+  min-height: 10em;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+#background-credit-badge {
+  background-color:black;
+  color:white;
+  text-decoration:none;
+  padding:4px 6px;
+  /* font-family:-apple-system, BlinkMacSystemFont,"San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif; */ 
+  font-family: 'Raleway', sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  line-height:1.2;
+  display:inline-block;
+  border-radius:3px;
+  position: absolute;
+  bottom: 0;
+  right:0;
+}
+
+#background-credit-badge-icon {
+  display:inline-block;
+  padding:2px 3px;
+}
+
+#background-credit-badge-svg {
+  height:12px;
+  width:auto;
+  position:relative;
+  vertical-align:middle;
+  top:-2px;
+  fill:white;
+}
+
+#background-credit-badge-title {
+  display:inline-block;
+  padding:2px 3px;
+}

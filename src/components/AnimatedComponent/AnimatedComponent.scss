@@ -1,0 +1,67 @@
+.animated-component {
+  overflow: hidden;
+}
+
+.animated-component.typing-enter-from {
+  width: 0 !important;
+}
+
+/* Typing animation */
+.typing-enter-active,
+.typing-leave-active {
+  transition: width 2000ms ease;
+}
+.typing-enter-from {
+  width: 0 !important;
+}
+.typing-leave-to {
+  width: 100%;
+}
+// .typing-enter-active {
+//   animation: 
+//     typing 2s steps(30, end) forwards,
+//     cursor 1s normal;
+// }
+
+// @keyframes typing {
+//   from { width: 0 }
+//   to { width: 100% }
+// }
+
+// @keyframes cursor {
+//   0% { border-color: transparent; }
+//   50% { border-color: white; }
+//   100% { border-color: transparent; }
+// }
+
+// @keyframes appear {
+//   from { visibility: hidden; }
+//   to { visibility: visible; }
+// }
+
+// The following styles are from https://michael-verschoof.medium.com/create-an-animated-vue-3-component-when-scrolling-into-view-f8e793e221c8
+.animated-component.typing-enter-from,
+.animated-component.fade-enter-from,
+.animated-component.zoom-enter-from {
+  transition: none;
+}
+
+/* Fade animation */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 500ms ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Zoom animation */
+.zoom-enter-active,
+.zoom-leave-active {
+  transition: transform 300ms ease;
+}
+.zoom-enter-from,
+.zoom-leave-to {
+  transform: scale(0.9);
+}
