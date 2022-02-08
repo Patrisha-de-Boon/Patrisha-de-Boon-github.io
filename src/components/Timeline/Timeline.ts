@@ -125,18 +125,23 @@ export default class TimelineVue extends Vue {
   }
 
   hoverEvent(sequenceIndex: number | null, eventIndex: number | null): void {
-    this.selectedSequenceIndex = sequenceIndex;
-    this.selectedEventIndex = eventIndex;
-
     if (
-      sequenceIndex != null &&
-      sequenceIndex >= 0 &&
-      eventIndex != null &&
-      eventIndex >= 0
+      this.selectedSequenceIndex != sequenceIndex ||
+      this.selectedEventIndex != eventIndex
     ) {
-      this.$emit("hovered", this.events[sequenceIndex][eventIndex]);
-    } else {
-      this.$emit("hovered", null);
+      this.selectedSequenceIndex = sequenceIndex;
+      this.selectedEventIndex = eventIndex;
+
+      if (
+        sequenceIndex != null &&
+        sequenceIndex >= 0 &&
+        eventIndex != null &&
+        eventIndex >= 0
+      ) {
+        this.$emit("hovered", this.events[sequenceIndex][eventIndex]);
+      } else {
+        this.$emit("hovered", null);
+      }
     }
   }
 }

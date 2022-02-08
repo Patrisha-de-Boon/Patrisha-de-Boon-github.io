@@ -16,7 +16,7 @@
       <!-- About -->
       <div ref="about" v-if="aboutSections">
         <div class="nav-spacer"></div>
-        <Console :sections="aboutSections" class="about" />
+        <ConsoleList :sections="aboutSections" class="about" />
       </div>
 
       <!-- Career -->
@@ -30,19 +30,21 @@
         />
 
         <!-- Selected Event -->
-        <div>
-          <Console
-            v-if="selectedEvent"
-            class="absolute wide"
-            :sections="eventToConsoleSections(selectedEvent)"
+        <div v-if="selectedEvent" class="console absolute wide">
+          <ConsoleCell
+            :section="eventToConsoleSection(selectedEvent)"
             maxWidth="min(max(40vw, 900px), 1200px)"
           />
-          <Console v-else class="absolute wide" :sections="hintEventSection" />
+        </div>
+        <div v-else class="console absolute wide">
+          <!-- Hint to show the user how to interact with the timeline -->
+          <ConsoleCell :section="hintEventSection" maxWidth="700px" />
+        </div>
+        <div v-if="longestDisplayCareer" class="console relative hidden wide">
           <!-- Placeholder so the page doesn't shift too much -->
-          <Console
-            class="relative hidden"
-            v-if="longestDisplayCareer"
-            :sections="eventToConsoleSections(longestDisplayCareer)"
+          <ConsoleCell
+            :section="eventToConsoleSection(longestDisplayCareer)"
+            maxWidth="min(max(40vw, 900px), 1200px)"
           />
         </div>
       </div>
@@ -50,7 +52,7 @@
       <!-- Portfolio -->
       <div ref="portfolio">
         <div class="nav-spacer"></div>
-        <Console
+        <ConsoleList
           :sections="portfolioSections"
           maxWidth="min(max(40vw, 900px), 1200px)"
         />

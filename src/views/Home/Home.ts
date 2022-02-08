@@ -3,7 +3,8 @@ import { TimelineEvent } from "@/models/TimelineEvent";
 import Timeline from "@/components/Timeline/Timeline.vue"; // @ is an alias to /src
 import moment from "moment";
 import { ConsoleSection } from "@/models/ConsoleSection";
-import Console from "@/components/Console/Console.vue";
+import ConsoleList from "@/components/ConsoleList/ConsoleList.vue";
+import ConsoleCell from "@/components/ConsoleCell/ConsoleCell.vue";
 import { useRoute } from "vue-router";
 import { watch } from "vue";
 import router from "@/router";
@@ -11,7 +12,8 @@ import router from "@/router";
 @Options({
   components: {
     Timeline,
-    Console,
+    ConsoleList,
+    ConsoleCell,
   },
 })
 export default class Home extends Vue {
@@ -20,12 +22,10 @@ export default class Home extends Vue {
   aboutSections: ConsoleSection[] = aboutSections;
   portfolioSections: ConsoleSection[] = portfolioSections;
   fixBackground = false;
-  hintEventSection: ConsoleSection[] = [
-    <ConsoleSection>{
-      title: "Education And Career",
-      body: "Hover over any section of the timeline to see more information.",
-    },
-  ];
+  hintEventSection: ConsoleSection = <ConsoleSection>{
+    title: "Education And Career",
+    body: "Hover over any section of the timeline to see more information.",
+  };
 
   get longestDisplayCareer(): TimelineEvent | null {
     let event: TimelineEvent | null = null;
@@ -84,14 +84,12 @@ export default class Home extends Vue {
     }
   }
 
-  eventToConsoleSections(event: TimelineEvent): ConsoleSection[] {
-    return [
-      <ConsoleSection>{
-        title: event.title,
-        body: event.description,
-        imageSrc: event.imageSrc,
-      },
-    ];
+  eventToConsoleSection(event: TimelineEvent): ConsoleSection {
+    return <ConsoleSection>{
+      title: event.title,
+      body: event.description,
+      imageSrc: event.imageSrc,
+    };
   }
 
   onScroll(): void {

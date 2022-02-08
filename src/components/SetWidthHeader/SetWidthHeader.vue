@@ -1,10 +1,10 @@
 <template>
   <h1 ref="hidden-header" class="console-header hidden">
-    {{ section.title }}
+    {{ title }}
   </h1>
   <div :style="headerStyle">
     <AnimatedComponent animationType="typing" class="no-width">
-      <h1 class="console-header">{{ section.title }}</h1>
+      <h1 class="console-header">{{ title }}</h1>
     </AnimatedComponent>
   </div>
 </template>

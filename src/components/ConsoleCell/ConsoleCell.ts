@@ -7,8 +7,8 @@ import SetWidthHeader from "../SetWidthHeader/SetWidthHeader.vue";
     SetWidthHeader,
   },
   props: {
-    sections: {
-      type: Object as () => ConsoleSection[],
+    section: {
+      type: Object as () => ConsoleSection,
       required: true,
     },
     maxWidth: {
@@ -18,8 +18,8 @@ import SetWidthHeader from "../SetWidthHeader/SetWidthHeader.vue";
     },
   },
 })
-export default class Console extends Vue {
-  sections!: ConsoleSection[];
+export default class ConsoleList extends Vue {
+  section!: ConsoleSection;
   maxWidth!: string;
   publicPath = process.env.BASE_URL;
 }

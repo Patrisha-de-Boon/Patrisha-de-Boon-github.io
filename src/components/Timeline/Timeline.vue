@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @mouseleave="hoverEvent(null, null)">
     <!-- Timelines -->
     <div
       v-for="(sequence, i) in events"
@@ -47,7 +47,6 @@
           y2="12"
           class="hover"
           @mouseover="hoverEvent(i, j)"
-          @mouseleave="hoverEvent(null, null)"
         />
       </svg>
     </div>
