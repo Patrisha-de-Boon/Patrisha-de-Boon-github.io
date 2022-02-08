@@ -21,14 +21,28 @@ npm run lint
 ```
 
 ### Deploy
+Linux
+```
+sh deploy.sh
+```
+
 Windows
 ```
 .\deploy.ps1
 ```
 
-Linux
+Note that on Windows when running the deploy script in powershell, you may encounter a "File _ cannot be loaded" error because deploy.ps1 is not digitally signed. If this happens, you can run the following command to bypass this security check for your current powershell process (And not other sessions).
+
 ```
-sh deploy.sh
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+If you wish to maintain your current execution policy within the active session you can save the existing policy and restore it afterwards using the following series of commands.
+```
+$currPolicy = Get-ExecutionPolicy
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\deploy.ps1
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy $currPolicy
 ```
 
 ### Customize configuration
